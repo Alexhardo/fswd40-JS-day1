@@ -82,6 +82,7 @@ var myarray = [
 ];
 //Select and output the numbers 11, 25, 17, 27 and 0 to the Web Browser.
 document.write("we have the following Array : <br><br>")
+
 for (x1 = 0; x1 < myarray.length; x1++) {
     for (x2 = 0; x2 < myarray[x1].length; x2++) {
         document.write("<strong>" + myarray[x1][x2] + " " + "</strong>");
@@ -124,6 +125,7 @@ var multi = [
     ["Vienna"],
     ["Vienna"]
 ];
+var lengtharray = multi.length;
 var sum1 = 0;
 for (z1 = 0; z1 < multi.length; z1++) {
     for (z2 = 0; z2 < multi[z1].length; z2++) {
@@ -131,11 +133,13 @@ for (z1 = 0; z1 < multi.length; z1++) {
         document.write("<br>");
         var n = multi[z1][z2].length;
         sum1 = sum1 + n;
+        lengtharray=lengtharray-1;
     }
+    if (lengtharray>0){
     for (k = 0; k < sum1; k++) {
         document.write('+');
     }
-}
+}}
 
 document.write("<br>");
 
